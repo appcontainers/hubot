@@ -13,11 +13,9 @@ Today's version of Hubot is open source, written in CoffeeScript on Node.js, and
 
 [Official Hubot Site:](https://hubot.github.com)
 
-&nbsp;
 
 This containers purpose is to get a customizable hubot instance up and running with a single docker run statement. The container is built with environment variables that allow the user to plug in custom values which will allow the container to configure itself on first run. This will give the user a fully customized experience just as if you set up hubot on your own from scratch. The image has the gtalk, slack and hipchat adapters installed to allow integration into these 3 main chat systems.
 
-&nbsp;  
 
 ># Container Variables:
 
@@ -46,7 +44,6 @@ The container is built to allow several configurable variables to be passed in a
 - HUBOT_HIPCHAT_PASSWORD - The password of the created hipchat user that hubot will use to connect to the hipchat service
 - HUBOT_HIPCHAT_ROOMS - The room listing that hubot will be added to in your hipchat service.
 
-&nbsp;
 
 ># Running the Container to connect to slack:
 
@@ -62,7 +59,6 @@ docker run -d -it \
 sciquest/hubot
 ```
 
-&nbsp;
 
 ># Running the Container to connect to hipchat:
 
@@ -89,7 +85,6 @@ Setting any of the above values will tell the container to replace the default v
 
 These examples will start a new container named hubot. The restart policy will be set to always, meaning that if the container crashes unexpectedly, it will automatically kick itself back off. At this point your app is fully configured and you need just check your chat service to ensure that the hubot user has connected succesfully. Once connected you can test that the chat robot is working correctly by typing @hubot ping in a chat channel. Hubot should respond with the message Pong.
 
-&nbsp;
 
 ># Included Scripts:
 
@@ -102,7 +97,6 @@ The following scripts are built into hubot with this build
  - hubot-shipit - Extends hubot to send back a ship it squirrel meme by typing @hubot ship it
  - hubot-suggest - If you send hubot a PM with something it doesn not understand, it will offer suggestions.
 
-&nbsp;
 
 ># Adding additional functionality scripts to hubot:
 
@@ -123,7 +117,6 @@ Attach to hubot by using `docker attach hubot` and hitting enter twice. Hit `CTL
 
 Once completed, you can restart hubot by running `bin/hubot --adapter $ADAPTER_NAME`. That should run the hubot process again with the newly installed extention script. At this point you can exit the container. DO not type exit (which would shut down the container), but instead use the detach key combination of `CTL P` + `CTL Q`.
 
-&nbsp;
 
 ># Launching the Container via docker-compose:
 
@@ -197,13 +190,11 @@ rebot:
 
 __NOTE: The hipchat JID is a combination of your company identifier along with the hubot user id which can be found on the hipchat web site when you are logged in.__
 
-&nbsp;
 
 ># Dockerfile Change-log:
 
     01/09/2016 - Hubot Container Created
 
-&nbsp;
 
 ># Verification
 
