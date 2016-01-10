@@ -1,5 +1,5 @@
 rebot:
-  image: appcontainers/hubot:debian
+  image: sciquest/hubot
   hostname: hubot
   stdin_open: true
   tty: true
