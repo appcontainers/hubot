@@ -19,12 +19,6 @@ This containers purpose is to get a customizable hubot instance up and running w
 
 &nbsp;  
 
-># You Tube Demo:
-
-Coming Soon!
-
-&nbsp;  
-
 ># Container Variables:
 
 The container is built to allow several configurable variables to be passed in at run time. The values are as follows:
