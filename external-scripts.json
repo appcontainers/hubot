@@ -1,0 +1,9 @@
+[
+  "hubot-help",  
+  "hubot-diagnostics",
+  "hubot-suggest",
+  "hubot-rules",
+  "hubot-redis-brain",
+  "hubot-pugme",
+  "hubot-shipit"
+]

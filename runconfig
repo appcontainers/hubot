@@ -1,0 +1,26 @@
+#!/bin/bash
+
+# Export Variables
+export $OWNER
+export $HUBOT_NAME
+export $DESCRIPTION
+export $ADAPTER_NAME
+
+# Slack Options
+export $HUBOT_SLACK_TOKEN
+export $HUBOT_SLACK_TEAM
+export $HUBOT_SLACK_NAME
+
+# Google Options
+export $GTALK_API_KEY
+
+# Hipchat Options
+export $HUBOT_HIPCHAT_TOKEN
+export $HUBOT_HIPCHAT_JABBERID
+export $HUBOT_HIPCHAT_NAME
+export $HUBOT_HIPCHAT_PASSWORD
+export $HUBOT_HIPCHAT_ROOMS
+
+# Install and run hubot
+`echo Y | /usr/local/bin/yo hubot --adapter $ADAPTER_NAME --owner $OWNER --name $HUBOT_NAME --description $DESCRIPTION --defaults`
+bin/hubot --adapter $ADAPTER_NAME
