@@ -115,7 +115,7 @@ RUN cd /opt/hubot && \
 npm install hubot-scripts hubot-diagnostics hubot-help hubot-hipchat \
 node-xmpp-client node-xmpp-server node-xmpp-component hubot hubot-slack hubot-gtalk hubot-redis-brain \
 hubot-pugme hubot-rules hubot-shipit hubot-suggest hubot-jenkins hubot-yourface hubot-gitlab hubot-codinglove \
-hubot-meme-generator hubot-jira --save
+hubot-meme-generator hubot-jira hubot-humanity --save
 
 CMD /bin/bash
 
