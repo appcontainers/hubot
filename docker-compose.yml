@@ -23,11 +23,8 @@ robot:
   - HUBOT_HIPCHAT_ROOMS=''
   - WHITELIST_DOMAINS=''
   - TERMTAG=JARVIS
-  - HUBOT_JENKINS_URL="http://jenkins.sciquest.com:8080"
+  - HUBOT_JENKINS_URL=http://jenkins.sciquest.com:8080
   - HUBOT_JENKINS_AUTH=jarvis:jarvis123456
-  - HUBOT_GITLAB_URL=gitlab.sciquest.com
+  - HUBOT_GITLAB_URL=http://gitlab.sciquest.com
   - HUBOT_GITLAB_ACCESSKEY=5KHxStzg4-g_LirHVsy1
-  - HUBOT_JIRA_URL=http://jira.sciquest.com
-  - HUBOT_JIRA_USERNAME=gitlabadmin
-  - HUBOT_JIRA_PASSWORD="G!tL@b@dmin1"
   command: /bin/bash
