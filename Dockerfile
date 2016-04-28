@@ -112,9 +112,9 @@ echo "[ -f /tmp/.runconfig.sh ] && rm -fr /tmp/.runconfig.sh" >> /home/hubot/.ba
 WORKDIR /opt/hubot
 
 RUN cd /opt/hubot && \
-npm install hubot-scripts hubot-diagnostics hubot-help \
+npm install hubot-scripts hubot-diagnostics hubot-help hubot-hipchat \
 node-xmpp-client node-xmpp-server node-xmpp-component hubot hubot-slack hubot-gtalk hubot-redis-brain \
-hubot-pugme hubot-rules hubot-shipit hubot-suggest hubot-hipchat
+hubot-pugme hubot-rules hubot-shipit hubot-suggest hubot-jenkins hubot-yourface hubot-gitlab hubot-codinglove
 
 CMD /bin/bash
 
