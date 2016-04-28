@@ -61,7 +61,7 @@ ENV TERMTAG HUBOT
 # Update and install wget, so we can get the key
 RUN apt-get -y update && \
 DEBIAN_FRONTEND=noninteractive apt-get -y upgrade && \
-DEBIAN_FRONTEND=noninteractive apt-get -y install git make libssl-dev libexpat1-dev && \
+DEBIAN_FRONTEND=noninteractive apt-get -y install git make libssl-dev libexpat1-dev sudo vim && \
 
 # Remove yum cache this bad boy can be 150MBish
 apt-get clean && \
@@ -76,7 +76,8 @@ RUN groupadd -g 501 hubot && \
 useradd -m -u 501 -g 501 hubot && \
 usermod -s /bin/bash hubot
 
-ADD external-scripts.json /opt/hubot/external-scripts.json
+ADD external-scripts.json /opt/hubot/external-scripts.modified
+ADD pluginlist /opt/hubot/pluginlist
 
 # Install npm
 RUN npm cache clear && \
@@ -112,10 +113,9 @@ echo "[ -f /tmp/.runconfig.sh ] && rm -fr /tmp/.runconfig.sh" >> /home/hubot/.ba
 WORKDIR /opt/hubot
 
 RUN cd /opt/hubot && \
-npm install hubot-scripts hubot-diagnostics hubot-help hubot-hipchat \
-node-xmpp-client node-xmpp-server node-xmpp-component hubot hubot-slack hubot-gtalk hubot-redis-brain \
-hubot-pugme hubot-rules hubot-shipit hubot-suggest hubot-jenkins hubot-yourface hubot-gitlab hubot-codinglove \
-hubot-meme-generator hubot-jira hubot-humanity --save
+npm install hubot hubot-diagnostics hubot-help hubot-suggest \
+hubot-hipchat node-xmpp-client node-xmpp-server node-xmpp-component hubot-slack hubot-gtalk \
+hubot-redis-brain hubot-pugme hubot-rules hubot-shipit
 
 CMD /bin/bash
 

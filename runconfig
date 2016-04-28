@@ -23,4 +23,10 @@ export $HUBOT_HIPCHAT_ROOMS
 
 # Install and run hubot
 `echo Y | /usr/local/bin/yo hubot --adapter $ADAPTER_NAME --owner $OWNER --name $HUBOT_NAME --description $DESCRIPTION --defaults`
+
+cd /opt/hubot/
+for x in `cat pluginlist`; do npm install $x --save; done
+
+cp -fr external-scripts.modified external-scripts.json
+
 bin/hubot --adapter $ADAPTER_NAME

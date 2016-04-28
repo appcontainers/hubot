@@ -1,15 +1,16 @@
 [
-  "hubot-help",  
   "hubot-diagnostics",
+  "hubot-help",
   "hubot-suggest",
-  "hubot-rules",
   "hubot-redis-brain",
   "hubot-pugme",
+  "hubot-rules",
   "hubot-shipit",
-  "hubot-jenkins",
   "hubot-yourface",
-  "hubot-gitlab",
-  "hubot-meme-generator",
-  "hubot-jira",
-  "hubot-humanity"
+  "hubot-codinglove",
+  "hubot-meme",
+  "hubot-humanity",
+  "hubot-jenkins",
+  "hubot-gitlab"
 ]
+

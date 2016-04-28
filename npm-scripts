@@ -1,6 +1,6 @@
 npm install \
 hubot-status hubot-users hubot-trainer hubot-reminder hubot-tasks hubot-seen hubot-acl hubot-bookmark \
-hubot-event hubot-cron hubot-passwdme hubot-conf hubot-ansible hubot-robowhois hubot-jenkins hubot-curl \
+hubot-event hubot-cron hubot-passwdme hubot-conf hubot-ansible hubot-robowhois hubot-curl \
 hubot-bitly hubot-gotomeeting hubot-youtube hubot-javascript hubot-weather hubot-reddit hubot-emoji \
 hubot-situation hubot-pugsofmarvel hubot-pugsofwesteros hubot-trollbot hubot-bro hubot-podbaydoors \
-hubot-yourface hubot-devopsreactions hubot-meme hubot-maps hubot-google-translate
+hubot-maps hubot-google-translate
