@@ -3,14 +3,14 @@
   "hubot-help",
   "hubot-suggest",
   "hubot-redis-brain",
+  "hubot-jenkins",
+  "hubot-gitlab",
+  "hubot-meme",
   "hubot-pugme",
   "hubot-rules",
   "hubot-shipit",
   "hubot-yourface",
   "hubot-codinglove",
-  "hubot-meme",
-  "hubot-humanity",
-  "hubot-jenkins",
-  "hubot-gitlab"
+  "hubot-humanity"
 ]
 
