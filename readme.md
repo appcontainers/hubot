@@ -12,7 +12,7 @@ GitHub, Inc., wrote the first version of Hubot to automate their company chat ro
 Today's version of Hubot is open source, written in CoffeeScript on Node.js, and easily deployed on platforms like Heroku. More importantly, Hubot is a standardized way to share scripts between everyone's robots.
 
 [Official Hubot Site:](https://hubot.github.com)
-
+[Github repository of this build:](https://github.com/appcontainers/hubot)
 
 This containers purpose is to get a customizable hubot instance up and running with a single docker run statement. The container is built with environment variables that allow the user to plug in custom values which will allow the container to configure itself on first run. This will give the user a fully customized experience just as if you set up hubot on your own from scratch. The image has the gtalk, slack and hipchat adapters installed to allow integration into these 3 main chat systems.
 
@@ -112,7 +112,7 @@ There are 2 ways to extend hubot functionality, one with new scripts built in, t
 
 ># Building a new docker image with custom scripts:
 
-Fork this project on github (appcontainers/hubot) and add the scripts you would like to include in the pluginlist file.
+Fork this project on github https://github.com/appcontainers/hubot and add the scripts you would like to include in the pluginlist file.
 Next, open the external-scripts.json file, and add the scripts to the json list.
 Thats it!! now build your new container image with `docker build -t yourcompany/hubot` .
 This will give you a new docker container with all of your scripts already included and installed.
@@ -236,3 +236,4 @@ appcontainers/hubot
 
 # Attach to container and navigate to /opt/hubot/bin
 hubot
+```
